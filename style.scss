@@ -1,0 +1,90 @@
+$Light-Cyan: hsl(193, 38%, 86%);
+$Neon-Green: hsl(150, 100%, 66%);
+
+$Grayish-Blue: hsl(217, 19%, 38%);
+$Dark-Grayish-Blue: hsl(217, 19%, 24%);
+$Dark-Blue: hsl(218, 23%, 16%);
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;600;800&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+box-sizing: border-box;
+}
+
+body {
+   background-color: $Dark-Blue;
+   height: 100vh;
+   overflow: hidden;
+   display: grid;
+   place-items: center;
+   text-align: center;
+   font-family: 'Manrope', sans-serif;
+   color: $Light-Cyan;
+}
+
+.container {
+   width: 350px;
+   background-color: $Dark-Grayish-Blue;
+   border-radius: 10px;
+   padding-inline: 30px;
+   // padding-bottom: 20px;
+}
+
+
+
+h2 {
+   font-size: 10px;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   color: $Neon-Green;
+   font-weight: 600;
+   margin: 20px 0;
+}
+
+p {
+   font-weight: 800;
+   line-height: 1.5;
+   width: 100%;
+   font-size: 18px;
+   // border: 1px solid white;
+   // margin-inline: 30px;
+}
+
+.pause-img {
+   margin-block: 20px;
+   margin-bottom: 50px;
+   width: 100%;
+
+   img {
+      max-width: 100%;
+   }
+}
+.card {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+}
+
+button {
+   padding: 15px;
+   border-radius: 50%;
+   background-color: $Neon-Green;
+   border: none;
+   align-self: center;
+   display: flex;
+   justify-self: center;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   bottom: 0;
+   transform: translateY(50%);
+   transition: 0.3s;
+   cursor: pointer;
+
+   &:hover {
+      box-shadow: 0 0 25px rgba($color: $Neon-Green, $alpha: 1.0);
+   }
+}
