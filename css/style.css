@@ -30,6 +30,7 @@ h1 {
   color: hsl(150deg, 100%, 66%);
   font-weight: 600;
   margin: 20px 0;
+  margin-bottom: 40px;
 }
 
 p {
